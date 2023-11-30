@@ -1,0 +1,91 @@
+body {
+    font-family: 'Sono', sans-serif;
+    background-color: #080808;
+}
+
+.pricing-container{
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    align-items: center;
+    height: 100vh;
+    
+}
+.plan{
+    background-color: #292b26;
+    flex: 1;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow:  2px 2px 4px 4px rgb(4, 0, 255);
+}
+.plan-title{
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+    padding-top: 210px;
+    border-radius: 15px;
+    
+    box-shadow:  2px 2px 4px 4px rgb(4, 0, 255);
+}
+.dice{
+    background-image: url(./image/dice.jpg);
+    background-size: cover;
+}
+.drum{
+    background-image: url(./image/drumkit.jpg);
+    background-size: cover;
+}
+.simon{
+    background-image: url(./image/simon.jpg);
+    background-size: cover;
+}
+
+.plan-price{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: green;
+}
+.plan-features{
+    text-align: justify;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.plan-features li{
+    margin-bottom: 20px;
+}
+.plan-button{
+    background-color:#080808;
+    color: red;
+    box-shadow: -1px -1px 4px 4px rgb(146, 146, 156);
+    border: none;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.btn2{
+    color: red;
+    text-decoration: none;
+}
+.btn1{
+    color: red;
+    text-decoration: none;
+}
+
+  /* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 1250px) {
+    .pricing-container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .pricing-plan{
+        min-width: 350px;
+    }
+}
