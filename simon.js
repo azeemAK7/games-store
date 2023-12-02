@@ -7,6 +7,11 @@ var bestScore = 0;
 var started = false;
 var level = 0;
 
+$(".rules").slideUp();
+$("h1").click(function(){
+  $("p").slideToggle();
+})
+
 $(document).keypress(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
